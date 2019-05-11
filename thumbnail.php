@@ -29,3 +29,5 @@ function add_gallery_thumbnail_size($size){
     $size['crop']   = 1;
     return $size;
 }
+
+
