@@ -1,4 +1,4 @@
-
+<?php
 // Убрираю счетчик количества товаров в категории
 add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_count' );
 
