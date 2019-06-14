@@ -22,5 +22,16 @@ function custom_override_checkout_fields( $fields ) {
     unset($fields['billing']['billing_company']);// компания
     unset($fields['billing']['billing_postcode']);// индекс 
       return $fields;
+  
+    // Пример удаления лейблов
+  	unset($fields['billing']['billing_first_name']['label']); 
+	  unset($fields['billing']['billing_phone']['label']);
+	  unset($fields['billing']['billing_email']['label']);
+    
+    // Пример добавления placeholder
+	  $fields['billing']['billing_first_name']['placeholder'] = 'Имя *'; 
+	  $fields['billing']['billing_phone']['placeholder'] = 'Телефон *'; 
+	  $fields['billing']['billing_phone']['placeholder'] = 'Email *'; 
+  
 }
 
