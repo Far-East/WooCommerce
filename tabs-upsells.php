@@ -1,3 +1,4 @@
+<?php
 // Меняю местами вкладки (табы)  и апсейлы на странице продуктов
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
 add_action( 'woocommerce_after_single_product_summary', 'bbloomer_woocommerce_output_upsells', 5 );
