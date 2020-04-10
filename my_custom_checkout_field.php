@@ -74,4 +74,4 @@ function misha_view_order_and_thankyou_page( $order_id ){  ?>
         </tr>
         </tbody>
     </table>
-<?php }
+<?php } 
